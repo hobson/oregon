@@ -1,0 +1,206 @@
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ manage.py validate
+manage.py: command not found
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ chmod +x manage.py
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ manage.py validate
+manage.py: command not found
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ ./manage.py validate
+0 errors found
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ sudo service nginx restart
+[sudo] password for bit: 
+Restarting nginx: nginx.
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ uwsgi --socket :8001 --wsgi-file test_uwsgi.py
+*** Starting uWSGI 1.9.14 (64bit) on [Sun Aug 25 16:58:08 2013] ***
+compiled with version: 4.6.3 on 24 August 2013 09:48:36
+os: Linux-3.5.0-27-generic #46~precise1-Ubuntu SMP Tue Mar 26 19:33:21 UTC 2013
+nodename: bm-desktop
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/bit/src/oregon/oregon
+detected binary path: /home/bit/.virtualenvs/oregon/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63030
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 2.7.3 (default, Apr 10 2013, 06:31:07)  [GCC 4.6.3]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x9ae8c0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72776 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+failed to open python file test_uwsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 11471, cores: 1)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ sudo ln -s /etc/nginx/sites-available/project_oregon /etc/nginx/sites-enabled/project_oregon
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ sudo service nginx restart
+Restarting nginx: nginx.
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ uwsgi --socket :8001 --wsgi-file 
+manage.py  oregon/    static/    
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ uwsgi --socket :8001 --wsgi-file ../test_uwsgi.py 
+*** Starting uWSGI 1.9.14 (64bit) on [Sun Aug 25 17:08:39 2013] ***
+compiled with version: 4.6.3 on 24 August 2013 09:48:36
+os: Linux-3.5.0-27-generic #46~precise1-Ubuntu SMP Tue Mar 26 19:33:21 UTC 2013
+nodename: bm-desktop
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/bit/src/oregon/oregon
+detected binary path: /home/bit/.virtualenvs/oregon/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63030
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 2.7.3 (default, Apr 10 2013, 06:31:07)  [GCC 4.6.3]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x20918c0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72776 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x20918c0 pid: 11965 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 11965, cores: 1)
+^C(oregon)bit@bm-desktop:~/src/oregon/oregon$ nano /etc/nginx/sites-available/project_oregon(oregon)bit@bm-desktop:~/src/oregon/oregon$ sudo nano /etc/nginx/sites-available/project_oregon 
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ history >> ~/nginx_django_configuration_notes.txt 
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ sudo service nginx restart
+Restarting nginx: nginx.
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ pwd
+/home/bit/src/oregon/oregon
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ ls
+manage.py  oregon  static
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ uwsgi --socket /var/run/project_oregon.sock --wsgi-file /home/bit/src/oregon/test_uwsgi.py
+*** Starting uWSGI 1.9.14 (64bit) on [Sun Aug 25 17:20:08 2013] ***
+compiled with version: 4.6.3 on 24 August 2013 09:48:36
+os: Linux-3.5.0-27-generic #46~precise1-Ubuntu SMP Tue Mar 26 19:33:21 UTC 2013
+nodename: bm-desktop
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/bit/src/oregon/oregon
+detected binary path: /home/bit/.virtualenvs/oregon/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63030
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+bind(): Permission denied [core/socket.c line 185]
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ uwsgi --socket /var/run/project_oregon.sock --wsgi-file /home/bit/src/oregon/test_uwsgi.py --chmod-socket=666
+*** Starting uWSGI 1.9.14 (64bit) on [Sun Aug 25 17:21:11 2013] ***
+compiled with version: 4.6.3 on 24 August 2013 09:48:36
+os: Linux-3.5.0-27-generic #46~precise1-Ubuntu SMP Tue Mar 26 19:33:21 UTC 2013
+nodename: bm-desktop
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/bit/src/oregon/oregon
+detected binary path: /home/bit/.virtualenvs/oregon/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63030
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+bind(): Permission denied [core/socket.c line 185]
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ sudo uwsgi --socket /var/run/project_oregon.sock --wsgi-file /home/bit/src/oregon/test_uwsgi.py --chmod-socket=666
+uwsgi: unrecognized option '--wsgi-file'
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ sudo "uwsgi --socket /var/run/project_oregon.sock --wsgi-file /home/bit/src/oregon/test_uwsgi.py --chmod-socket=666"
+usage: sudo [-D level] -h | -K | -k | -V
+usage: sudo -v [-AknS] [-D level] [-g groupname|#gid] [-p prompt] [-u user name|#uid]
+usage: sudo -l[l] [-AknS] [-D level] [-g groupname|#gid] [-p prompt] [-U user name] [-u user name|#uid] [-g
+            groupname|#gid] [command]
+usage: sudo [-AbEHknPS] [-C fd] [-D level] [-g groupname|#gid] [-p prompt] [-u user name|#uid] [-g groupname|#gid]
+            [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-C fd] [-D level] [-g groupname|#gid] [-p prompt] [-u user name|#uid] file ...
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ sudo nano /etc/nginx/sites-available/project_oregon 
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ sudo service nginx restart
+Restarting nginx: nginx.
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ uwsgi --socket /var/run/project_oregon.sock --wsgi-file /home/bit/src/oregon/test_uwsgi.py
+*** Starting uWSGI 1.9.14 (64bit) on [Sun Aug 25 17:23:01 2013] ***
+compiled with version: 4.6.3 on 24 August 2013 09:48:36
+os: Linux-3.5.0-27-generic #46~precise1-Ubuntu SMP Tue Mar 26 19:33:21 UTC 2013
+nodename: bm-desktop
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/bit/src/oregon/oregon
+detected binary path: /home/bit/.virtualenvs/oregon/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63030
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+bind(): Permission denied [core/socket.c line 185]
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ uwsgi --socket /var/run/project_oregon.sock --wsgi-file /home/bit/src/oregon/test_uwsgi.py --chmod-socket=666
+*** Starting uWSGI 1.9.14 (64bit) on [Sun Aug 25 17:23:17 2013] ***
+compiled with version: 4.6.3 on 24 August 2013 09:48:36
+os: Linux-3.5.0-27-generic #46~precise1-Ubuntu SMP Tue Mar 26 19:33:21 UTC 2013
+nodename: bm-desktop
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/bit/src/oregon/oregon
+detected binary path: /home/bit/.virtualenvs/oregon/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63030
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+bind(): Permission denied [core/socket.c line 185]
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ touch ../project_oregon.sock
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ chmod a+w ../project_oregon.sock 
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ id bit
+uid=1000(bit) gid=1000(bit) groups=1000(bit),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),109(lpadmin),124(sambashare)
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ usermod -a -G www-data bit
+usermod: cannot lock /etc/passwd; try again later.
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ su
+Password: 
+su: Authentication failure
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ sudo su
+root@bm-desktop:/home/bit/src/oregon/oregon# usermod -a -G www-data bit
+root@bm-desktop:/home/bit/src/oregon/oregon# id bit
+uid=1000(bit) gid=1000(bit) groups=1000(bit),4(adm),24(cdrom),27(sudo),30(dip),33(www-data),46(plugdev),109(lpadmin),124(sambashare)
+root@bm-desktop:/home/bit/src/oregon/oregon# id ngix
+id: ngix: No such user
+root@bm-desktop:/home/bit/src/oregon/oregon# id nginx
+id: nginx: No such user
+root@bm-desktop:/home/bit/src/oregon/oregon# id www-data
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+root@bm-desktop:/home/bit/src/oregon/oregon# exit
+exit
+(oregon)bit@bm-desktop:~/src/oregon/oregon$ uwsgi --socket /home/bit/src/oregon/project_oregon.sock --wsgi-file /home/bit/src/oregon/test_uwsgi.py
+*** Starting uWSGI 1.9.14 (64bit) on [Sun Aug 25 17:29:09 2013] ***
+compiled with version: 4.6.3 on 24 August 2013 09:48:36
+os: Linux-3.5.0-27-generic #46~precise1-Ubuntu SMP Tue Mar 26 19:33:21 UTC 2013
+nodename: bm-desktop
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/bit/src/oregon/oregon
+detected binary path: /home/bit/.virtualenvs/oregon/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63030
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+uwsgi socket 0 bound to UNIX address /home/bit/src/oregon/project_oregon.sock fd 3
+Python version: 2.7.3 (default, Apr 10 2013, 06:31:07)  [GCC 4.6.3]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xd36950
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72776 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xd36950 pid: 12210 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 12210, cores: 1)
+^C(oregon)bit@bm-desktop:~/src/oregon/oregon$ 
+

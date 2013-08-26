@@ -1,0 +1,1487 @@
+    1  sudo apt-get update
+    2  mkdir ~/cconfig-file-backup
+    3  mkdir -p ~/config-file-backup/etc/ssh
+    4  cp /etc/fstab ~/config-file-backup/etc/
+    5  sudo nano /etc/fstab
+    6  sudo apt-get upgrade -y
+    7  mkdir src/
+    8  mkdir bin
+    9  cd ~/Downloads
+   10  ls -al
+   11  gedit setup_mining.sh
+   12  bg
+   13  export PORT_BM=10738
+   14  sudo apt-get install -y openssh-server
+   15  more ~/cred.sh
+   16  nano cred.sh
+   17  nano ~/cred.sh
+   18  sudo reboot
+   19  ls
+   20  cd Downloads
+   21  ls
+   22  gedit setup_mining.sh &
+   23  ls -al
+   24  sudo apt-get install -y subversion git-core curl libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm libtool
+   25  mkdir -p ~/src
+   26  mv ~/Downloads/AMD-APP-SDK-*.tgz ~/src
+   27  cd ~/src
+   28  tar -zxvf AMD-APP-SDK-*.tgz
+   29  sudo ./Install-AMD-APP.sh
+   30  curl ifconfig.me
+   31  exit
+   32  sudo apt-get upgrade -y
+   33  sudo apt-get update
+   34  sudo apt-get upgrade -y
+   35  exit
+   36  mv ~/Downloads/setup_mining.sh ~/bin/
+   37  gedit ~/bin/*.sh
+   38  bg
+   39  ls
+   40  cd src
+   41  ls
+   42  git clone git://github.com/ckolivas/cgminer.git cgminer
+   43  cd ~/src/cgminer
+   44  ./autogen.sh
+   45  source /etc/security/cred.sh
+   46  nano /etc/security/cres.sh
+   47  nano /etc/security/cred.sh
+   48  source /etc/security/cred.sh
+   49  make
+   50  source /etc/security/cred.sh
+   51  export DISPLAY=:0
+   52  export GPU_USE_SYNC_OBJECTS=1
+   53  ./cgminer -u hobs_hobs -p "$PW_BITMINTER" -o http://mint.bitminter.com:8332 -I 9,9,9
+   54  cd ..
+   55  ls
+   56  more ReadMe.txt
+   57  more *.log
+   58  ls
+   59  cd cgminer
+   60  ./cgminer -n
+   61  mkdir ADL_SDK
+   62  cd ADL_SDK
+   63  mv ~/Downloads/ADL_SDK_5.0.zip .
+   64  unzip ADL_SDK_5.0.zip
+   65  cp ADL_SDK/include/* ~/src/cgminer/ADL_SDK
+   66  ls
+   67  cp include/* ~/src/cgminer/ADL_SDK
+   68  cd ..
+   69  ls
+   70  mv cred.sh ~/bin
+   71  sudo mv ~/bin/cred.sh /etc/security/
+   72  more /etc/security/cred.sh
+   73  gksudo gparted
+   74  pkill gparted
+   75  gksudo gparted
+   76  sudo gparted
+   77  exit
+   78  lspci -v | grep VGA -A15 
+   79  cd src
+   80  ls
+   81  sudo ./Install-AMD-APP.sh
+   82  cat ~/bin/setup_mining.sh 
+   83  grep "Port " /etc/ssh/sshd_config
+   84  sudo sed -i "s/^Port[ ]22/Port $PORT_BM/g" /etc/ssh/sshd_config
+   85  grep "Port " /etc/ssh/sshd_config
+   86  sudo sed -i "s/^Port[ ]$PORT_BM/Port 22/g" /etc/ssh/sshd_config
+   87  grep "Port " /etc/ssh/sshd_config
+   88  source ~/etc/security/cred.sh
+   89  source /etc/security/cred.sh
+   90  sudo sed -i "s/^Port[ ]22/Port $PORT_BM/g" /etc/ssh/sshd_config
+   91  grep "Port " /etc/ssh/sshd_config
+   92  sudo service sshd restart
+   93  sudo service ssh\ restart
+   94  sudo service ssh restart
+   95  sudo service open-ssh restart
+   96  sudo service --list
+   97  sudo service
+   98  sudo service --status-all
+   99  env
+  100  env | grep GPU
+  101  env | grep SYNC
+  102  cd cgminer
+  103  cd ~/src/cgminer
+  104  ./autogen.sh
+  105  CFLAGS="-O2 -Wall -march=native -I /opt/AMDAPP/include/" LDFLAGS="-L/opt/AMDAPP/lib/x86_64" ./configure
+  106  make
+  107  export DISPLAY=:0
+  108  export GPU_USE_SYNC_OBJECTS=1
+  109  ./cgminer -n
+  110  ./cgminer -u hobs_hobs -p 'm@keco!n' -o http://mint.bitminter.com:8332 -I 9,9
+  111  ./cgminer -u hobs_hobs -p 'm@kec0!n' -o http://mint.bitminter.com:8332 -I 9,9
+  112  ./cgminer -u hobs_hobs -p 'm@kec0in' -o http://mint.bitminter.com:8332 -I 9,9
+  113  exit
+  114  cd ~/Downloads
+  115  ls
+  116  more setup_mining.sh~ 
+  117  cat setup_mining.sh~ 
+  118  cd ~/src
+  119  cd cgminer/
+  120  ls
+  121  cd ADL_SDK/
+  122  ls
+  123  cd ..
+  124  env
+  125  echo $PW_BITMINTER
+  126  source /etc/security/cred.sh
+  127  echo $PW_BITMINTER
+  128  export PW_BITMINTER='m@k3co\!n'
+  129  echo $PW_BITMINTER
+  130  lspci
+  131  lspci -v | grep VGA
+  132  lspci -v | grep VGA -A50 -B10
+  133  sudo nano /etc/X11
+  134  ls /etc/X11
+  135  sudo nano /etc/X11/xorg.conf
+  136  ./cgminer -n
+  137  Section "Device"
+  138  EndSection
+  139  Section "Device"
+  140  ./cgminer -n --gpu-map 1:1,2:2
+  141  ./cgminer -n --gpu-map 0:1,1:2
+  142  cd src
+  143  cd cgminer
+  144  ./cgminer -n
+  145  sudo nano /etc/xorg/xorg.conf
+  146  sudo nano /etc/X11/xorg.conf
+  147  sudo reboot
+  148  cd src/cgminer
+  149  ./cgminer -n
+  150  lspci
+  151  ./cgminer -n
+  152  cd src/cgminer/
+  153  ./cgminer -n
+  154  exit
+  155  sudo apt-get update
+  156  more /etc/lightdm/lightdm.conf 
+  157  sudo nano /etc/lightdm/lightdm.conf
+  158  /etc/lightdm/lightdm.conf like this after installation.
+  159  sudo apt-get install fglrx-updates fglrx-amdcccle-updates fglrx-updates-dev
+  160  pgrep cgminer
+  161  sudo pkill cgminer
+  162  pgrep cgminer
+  163  aticonfig --lsa
+  164  sudo aticonfig --lsa
+  165  sudo aticonfig --adapter=all --initial
+  166  more xorg.conf
+  167  more /etc/Xll/xorg.conf
+  168  more /etc/X11/xorg.conf
+  169  export DISPLAY=:0
+  170  export GPU_USE_SYNC_OBJECTS=1
+  171  ./cgminer -n
+  172  cd src/cgminer
+  173  ./cgminer -n
+  174  sudo reboot
+  175  exit
+  176  cd src/cgminer
+  177  ./cgminer -n
+  178  ./cgminer -n -v
+  179  ./cgminer -u hobs_hobs -p 'm@kec0in' -o http://mint.bitminter.com:8332 -I 9,9
+  180  exit
+  181  sudo aticonfig --adapter=all --odgt
+  182  sudo apt-get install xorg openbox
+  183  sudo apt-get search xfce
+  184  sudo apt-cache search xfce
+  185  sudo apt-get install xfce
+  186  sudo apt-get install xfce4
+  187  cd src
+  188  cd cgminer
+  189  ./cgminer -u hobs_hobs -p 'm@kec0in' -o http://mint.bitminter.com:8332 -I 9,9
+  190  bg
+  191  top
+  192  pgrep cgminer
+  193  ps aux | grep cgm
+  194  exit
+  195  nano ~/bin/mine.sh
+  196  bg
+  197  nano ~/bin/mine.sh
+  198  chmod +x ~/bin/mine.sh 
+  199  sudo apt-get install byobu
+  200  byobu
+  201  exit
+  202  pgrep cgmine
+  203  ps aux | grep cgm
+  204  kill 12056
+  205  ps aux | grep cgmi
+  206  pkill 12056
+  207  ps aux | grep cgmi
+  208  kill --term 12056
+  209  man kill
+  210  kill s KILL 12056
+  211  ps aux | grep cgmi
+  212  ps -e
+  213  kill 12056
+  214  ps -e
+  215  kill -s KILL 12056
+  216  ps aux
+  217  byobu
+  218  exit
+  219  byobu
+  220  exit
+  221  cd ..
+  222  cd bin
+  223  ./mine.sh
+  224  sudo shutdown now
+  225  byobu
+  226  exit
+  227  nano ~/.bashrc
+  228  more ~/.profile
+  229  more ~/.bash_profile
+  230  nano ~/.bashrc
+  231  more /etc/rc.local
+  232  sudo nano /etc/rc.local
+  233  nano ~/.bashrc
+  234  top
+  235  exit
+  236  ./bin/mine.sh
+  237  sudo shutdown now
+  238  top
+  239  pgrep cgminer
+  240  nano ~/.bashrc
+  241  sudo nano /etc/rc.local
+  242  nano ~/bin/mine.sh
+  243  mv ~/bin/mine.sh ~/bin/mine
+  244  chmod a+x ~/bin/mine
+  245  sudo nano /etc/rc.local
+  246  sudo reboot
+  247  mine
+  248  sudo shutdown now
+  249  pgrep cgminer
+  250  ps aux | grep mine
+  251  byobu
+  252  exit
+  253  top
+  254  byobu
+  255  exit
+  256  sudo nano /etc/rc.local
+  257  byobu
+  258  exit
+  259  byobu
+  260  exit
+  261  byobu
+  262  more .ssh
+  263  cd .ssh
+  264  ls
+  265  cd ..
+  266  sudo apt-get search cudo
+  267  sudo apt-cache search cuda
+  268  sudo apt-get install nvidia-cuda-toolkit
+  269  byobu
+  270  exit
+  271  sudo apt-get update
+  272  sudo apt-get remove nvidia-cuda-toolkit
+  273  byobu
+  274  lspci
+  275  lspci -v | grep VGA
+  276  lspci -v | grep -A10 -B3 VGA
+  277  lspci -v | grep -A10 -B3 radeon
+  278  lspci -v | grep -A10 -B3 Radeon
+  279  byobu
+  280  top
+  281  pgrep mine
+  282  mine
+  283  pwd
+  284  cd src
+  285  ls
+  286  cd parallel
+  287  ls
+  288  python timed_example.py
+  289  exit
+  290  sudo apt-get install -y gfortran
+  291  sudo apt-get install python-pip python-dev
+  292  sudo pip install virtualenv virtualenvwrapper
+  293  cd sr
+  294  cd src
+  295  mkproject parallel
+  296  nano ~/.bashrc
+  297  source ~/.bashrc
+  298  mkproject parallel
+  299  nano ~/.bashrc
+  300  source ~/.bashrc
+  301  mkproject parallel
+  302  pip install--upgrade  distribute 
+  303  pip install --upgrade distribute
+  304  pip install mako
+  305  pip install numpy
+  306  sudo update-pciids
+  307  lspci -v | grep VGA
+  308  python
+  309  pip install opencl
+  310  pip install pyopencl
+  311  sudo apt-get install -y gfortran g++
+  312  pip install pyopencl
+  313  ls
+  314  nano example.py
+  315  python example.py
+  316  python
+  317  nano timed_example.py
+  318  python timed_example.py
+  319  python
+  320  pip install ipython
+  321  ipython
+  322  ls
+  323  more timed_example.py 
+  324  nano timed_example.py 
+  325  python timed_example.py 
+  326  nano timed_example.py 
+  327  python timed_example.py 
+  328  nano timed_example.py 
+  329  python timed_example.py 
+  330  nano timed_example.py 
+  331  python timed_example.py 
+  332  nano timed_example.py 
+  333  python timed_example.py 
+  334  nano timed_example.py 
+  335  python timed_example.py 
+  336  nano timed_example.py 
+  337  python timed_example.py 
+  338  nano timed_example.py 
+  339  python timed_example.py 
+  340  nano timed_example.py 
+  341  python timed_example.py 
+  342  nano ~/.bashrc
+  343  python timed_example.py 
+  344  source ~/.bashrc
+  345  python timed_example.py 
+  346  nano ~/.bashrc
+  347  source ~/.bashrc
+  348  python timed_example.py 
+  349  python
+  350  nano timed_example.py 
+  351  byobu
+  352  nano timed_example.py 
+  353  workon parallel
+  354  python timed_example.py 
+  355  byobu
+  356  uname -u
+  357  uname
+  358  uname -v
+  359  cat proc/cpuinfo
+  360  ls proc
+  361  ls /proc
+  362  ls /proc/cpuinfo
+  363  more /proc/cpuinfo
+  364  more /proc/meminfo
+  365  python timed_example.py 
+  366  nano timed_example.py 
+  367  exit
+  368  history | grep -A50 -B50 pyopencl
+  369  more ~/.bashrc
+  370  exit
+  371  sudo apt-get upgrade -y
+  372  byobu
+  373  exit
+  374  byobu
+  375  exit
+  376  byobu
+  377  exit
+  378  df
+  379  df -h
+  380  exit
+  381  ls /media
+  382  ln -s /dev/disk/by-label/StoreJet ~/
+  383  exit
+  384  rm StoreJet 
+  385  mkdir StoreJet
+  386  mount /dev/disk/by-label/StoreJet ~/StoreJet
+  387  sudo mount /dev/disk/by-label/StoreJet ~/StoreJet
+  388  exit
+  389  wget -q -O- 'https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc' | sudo apt-key add -
+  390  echo deb http://ceph.com/debian-cuttlefish/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
+  391  echo deb http://ceph.com/debian-bobtail/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
+  392  echo deb http://ceph.com/debian-argonaut/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
+  393  sudo apt-get update && sudo apt-get install ceph
+  394  sudo apt-get update
+  395  sudo apt-get upgrade -y
+  396  sudo nano /etc/default/rsyslog
+  397  sudo touch /var/log/motorola_surfboard_wifi_router.log
+  398  sudo nano /etc/rsyslog.conf
+  399  sudo nano /etc/logrotate.d/motorola_surfboard_wifi_router.log
+  400  sudo nano /etc/rsyslog.conf
+  401  sudo touch /var/log/motorola_surfboard_wifi_router.log
+  402  sudo nano /etc/logrotate.d/motorola_surfboard_wifi_router.log
+  403  sudo service rsyslog restart  
+  404  ifconfig
+  405  sudo nano /etc/rsyslog.conf
+  406  sudo nano /etc/rsyslog.d/30-enable-local-tcp.conf
+  407  sudo service rsyslog restart  
+  408  more /var/log/motorola_surfboard_wifi_router.log 
+  409  sudo nano /etc/rsyslog.d/30-enable-local-tcp.conf
+  410  sudo nano /etc/rsyslog.conf
+  411  sudo service rsyslog restart  
+  412  sudo nano /etc/rsyslog.conf
+  413  sudo service rsyslog restart  
+  414  nano /etc/rc.conf
+  415  ls /etc
+  416  nano /etc/hosts
+  417  sudo nano /etc/hosts
+  418  nano /etc/hosts
+  419  sudo nano /etc/hosts
+  420  pink AlSSD
+  421  ping AlSSD
+  422  ping router.happyhouse.lcl
+  423  sudo service rsyslog restart  
+  424  ls /var/log
+  425  ls -l /var/log
+  426  pgrep syslog
+  427  chown syslog:adm /var/log/motorola_surfboard_wifi_router.log 
+  428  sudo chown syslog:adm /var/log/motorola_surfboard_wifi_router.log 
+  429  ls -l /var/log
+  430  more nano /etc/rsyslog.d/20-ufw.conf 
+  431  sudo nano /etc/rsyslog.d/20-ufw.conf 
+  432  ls -l /var/log
+  433  ls -c /var/log
+  434  ls -c -lt /var/log
+  435  ls -chalt /var/log
+  436  tail syslog
+  437  tail /var/log/syslog
+  438  sudo ufw stat
+  439  sudo ufw status
+  440  sudo ufw enable
+  441  more ~/.ssh/config
+  442  more /etc/ssh/ssh_config 
+  443  grep Port /etc/ssh/
+  444  grep Port /etc/ssh/*
+  445  sudo ufw enable
+  446  ufw allow 10738
+  447  sudo ufw allow 10738
+  448  sudo ufw allow 514
+  449  sudo ufw status
+  450  ufw proto udp allow from 192.168.0.0/8 to 192.168.0.3 port 514
+  451  ufw allow proto udp from 192.168.0.0/8 to 192.168.0.3 port 514
+  452  sudo ufw allow proto udp from 192.168.0.0/8 to 192.168.0.3 port 514
+  453  sudo tcp allow proto udp from 192.168.0.0/8 to 192.168.0.3 port 514
+  454  sudo ufw allow proto tcp from 192.168.0.0/8 to 192.168.0.3 port 514
+  455  sudo ufw status
+  456  sudo ufw allow proto tcp from 192.168.0.0/2 to 192.168.0.3 port 514
+  457  sudo ufw status
+  458  tail /var/log/syslog
+  459  ping 224.0.0.251
+  460  ls -chalt /var/log
+  461  ls -chaltr /var/log
+  462  more /var/log/ufw.log
+  463  ifconfig
+  464  ls -chaltr /var/log
+  465  date
+  466  ls -chaltr /var/log
+  467  tail sys.log
+  468  tail syslog
+  469  tail /var/log/syslog
+  470  tail -n 100 /var/log/syslog
+  471  byobu
+  472  ufw disable
+  473  sudo ufw disable
+  474  ls -chaltr /var/log
+  475  exit
+  476  ifconfig
+  477  nano /etc/hosts
+  478  exit
+  479  sudo apt-get install nginx
+  480  sudo apt-get install ddclient
+  481  sudo nano /etc/hosts
+  482  sudo nano /etc/ddclient.conf
+  483  fg
+  484  sudo service ddclient restart
+  485  sudo nano /etc/ddclient.conf
+  486  sudo service ddclient restart
+  487  dmesg
+  488  ps -al
+  489  ping bit.storydecoder.com
+  490  sudo nano /etc/ddclient.conf
+  491  sudo rm /tmp/ddclient.cache
+  492  sudo service ddclient restart
+  493  nano /etc/hosts
+  494  sudo nano /etc/hosts
+  495  sudo service ddclient restart
+  496  ping storydecoder.com
+  497  sudo nano /etc/ddclient.conf
+  498  sudo service ddclient stop
+  499  ddclient -verbose -debug
+  500  sudo ddclient -verbose -debug
+  501  rm /var/tmp/ddclient.cache
+  502  rm /var/ddclient.cache
+  503  find / -name ddclient.cache -print
+  504  sudo find / -name ddclient.cache -print
+  505  sudo service ddclient restart
+  506  ifconfig
+  507  grep -i port /etc/ssh/ssh_config
+  508  grep -i port /etc/ssh/sshd_config
+  509  ping 71.59.254.246
+  510  ifconfig
+  511  wget checkip.dyndns.com
+  512  ls
+  513  more index.html 
+  514  sudo apt-get update
+  515  sudo apt-get upgrade -y
+  516  ifconfig
+  517  sudo nano /etc/ddclient.conf 
+  518  sudo service ddclient restart
+  519  sudo service ddclient stop
+  520  man ddclient
+  521  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  522  sudo service ddclient restart
+  523  sudo nano /etc/ddclient.conf 
+  524  sudo service ddclient stop
+  525  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  526  sudo nano /etc/ddclient.conf 
+  527  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  528  sudo nano /etc/ddclient.conf 
+  529  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  530  sudo service ddclient restart
+  531  ifconfig
+  532  ping bit.storydecoder.com
+  533  wget 127.0.0.1
+  534  byobu
+  535  exit
+  536  byobu
+  537  sudo ufw status verbose
+  538  sudo ufw enable
+  539  sudo ufw status verbose
+  540  sudo ufw allow http
+  541  sudo ufw allow https
+  542  nano /etc/nginx/nginx.conf 
+  543  more /etc/nginx/naxsi.rules
+  544  more /etc/nginx/nginx.conf 
+  545  nano /etc/nginx/nginx.conf 
+  546  sudo nano /etc/nginx/nginx.conf 
+  547  cd /usr/local
+  548  cd www
+  549  cd /var/www
+  550  cd /var
+  551  ls
+  552  cd local
+  553  ls
+  554  cd ..
+  555  ls
+  556  sudo nano /etc/nginx/nginx.conf 
+  557  cd /etc
+  558  cd nginx/
+  559  ls
+  560  cd sites-enabled/
+  561  ls
+  562  more default
+  563  sudo nano default 
+  564  more default 
+  565  cd /usr/share
+  566  ls
+  567  cd nginx/
+  568  ls
+  569  cd www
+  570  ls
+  571  sudo service nginx start
+  572  sudo service nginx restart
+  573  nano index.html
+  574  sudo nano index.html
+  575  exit
+  576  more /etc/ddclient.conf 
+  577  sudo more /etc/ddclient.conf 
+  578  sudo nano /etc/ddclient.conf 
+  579  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  580  sudo nano /etc/ddclient.conf 
+  581  sudo service ddclient restart
+  582  sudo nano /etc/ddclient.conf 
+  583  sudo service ddclient restart
+  584  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  585  sudo service ddclient restart
+  586  sudo nano /etc/ddclient.conf 
+  587  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  588  sudo service ddclient restart
+  589  nano /etc/default/ddclient 
+  590  more /etc/default/ddclient 
+  591  sudo nano /etc/default/ddclient 
+  592  sudo nano /etc/ddclient.conf 
+  593  sudo /etc/init.d/ddclient status
+  594  sudo service ddclient restart
+  595  exit
+  596  sudo apt-get install nginx uwsgi uwsgi-plugin-python python-virtualenv
+  597  cd src
+  598  ls
+  599  virtualenv oregon
+  600  cd oregon
+  601  ls
+  602  cd ..
+  603  cd ...
+  604  cd ..
+  605  df
+  606  exit
+  607  df
+  608  exit
+  609  pip install virtualenvwrapper
+  610  nano ~/.bashrc
+  611  cd src
+  612  mkproject oregon
+  613  ls
+  614  rm -rf oregon
+  615  cd ..
+  616  cd .virtualenvs/
+  617  ls
+  618  cd ..
+  619  cd src
+  620  mkproject oregon
+  621  nano requirements.txt
+  622  more requirements.txt 
+  623  pip install -r requirements.txt
+  624  deactivate
+  625  sudo apt-get install Django==1.5.1
+  626  sudo apt-get install pg_config
+  627  sudo apt-get install libpq-dev python-dev
+  628  cd ..
+  629  workon oregon
+  630  pip install -r requirements.txt
+  631  pip install uwsgi
+  632  nano test_uwsgi.py
+  633  uwsgi --http :8000 --wsgi-file test_uwsgi.py
+  634  manage.py help
+  635  ./manage.py help
+  636  django-admin.py startproject oregon
+  637  cd oregon
+  638  ls
+  639  manage.py runserver
+  640  chmod +x manage.py 
+  641  manage.py runserver
+  642  ls
+  643  python manage.py runserver
+  644  cd ..
+  645  ls
+  646  cd oregon
+  647  ls
+  648  cd ..
+  649  ls
+  650  cd oregon
+  651  uwsgi --http :8000 --wsgi-file oregon_wsgi.py
+  652  sudo service nginx restart
+  653  sudo nano /etc/nginx/sites-enabled/oregon
+  654  sudo mv /etc/nginx/sites-enabled/oregon /etc/nginx/oregon_nginx.conf
+  655  exit
+  656  curl http://127.0.0.1:8000
+  657  workon oregon
+  658  ls
+  659  cd oregon
+  660  ls
+  661  cd oregon
+  662  ls
+  663  cd ..
+  664  ls
+  665  curl http://127.0.0.1:8000
+  666  exit
+  667  curl http://127.0.0.1:8000
+  668  curl 'http://127.0.0.1:8000'
+  669  wget 'http://127.0.0.1:8000'
+  670  wget 'http://127.0.0.1:8001'
+  671  curl http://127.0.0.1/media/media.png
+  672  curl http://127.0.0.1:8000/media/media.png
+  673  curl http://127.0.0.1/
+  674  curl 127.0.0.1
+  675  curl 127.0.0.1:80
+  676  curl 127.0.0.1:8000
+  677  sudo service nginx start
+  678  curl 127.0.0.1:8000
+  679  curl 127.0.0.1
+  680  curl 127.0.0.1/index.html
+  681  wget 127.0.0.1/index.html
+  682  ping 127.0.0.1
+  683  ufw status
+  684  sudo ufw status
+  685  ufw allow 8000
+  686  sudo ufw allow 8000
+  687  sudo ufw allow 8001
+  688  ufw status
+  689  sudo ufw status
+  690  sudo ufw allow 5000
+  691  rm /etc/nginx/sites-enabled/project_oregon 
+  692  sudo rm /etc/nginx/sites-enabled/project_oregon 
+  693  sudo service nginx restart
+  694  ping 127.0.0.1
+  695  wget 127.0.0.1
+  696  wget bit.storydecoder.com
+  697  ls
+  698  rm index.html
+  699  rm index.html.1 
+  700  cd src
+  701  l
+  702  ls
+  703  cd oregon
+  704  ls
+  705  cd ..
+  706  wget bit.storydecoder.com
+  707  wget bit.storydecoder.com/media/media.png
+  708  ls
+  709  more media.png
+  710  rm media.png 
+  711  rm index.html
+  712  wget bit.storydecoder.com:8000/media/media.png
+  713  ls
+  714  more media.png
+  715  history
+  716  history > nginx_django_configuration_notes.txt
+    1  sudo apt-get update
+    2  mkdir ~/cconfig-file-backup
+    3  mkdir -p ~/config-file-backup/etc/ssh
+    4  cp /etc/fstab ~/config-file-backup/etc/
+    5  sudo nano /etc/fstab
+    6  sudo apt-get upgrade -y
+    7  mkdir src/
+    8  mkdir bin
+    9  cd ~/Downloads
+   10  ls -al
+   11  gedit setup_mining.sh
+   12  bg
+   13  export PORT_BM=10738
+   14  sudo apt-get install -y openssh-server
+   15  more ~/cred.sh
+   16  nano cred.sh
+   17  nano ~/cred.sh
+   18  sudo reboot
+   19  ls
+   20  cd Downloads
+   21  ls
+   22  gedit setup_mining.sh &
+   23  ls -al
+   24  sudo apt-get install -y subversion git-core curl libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm libtool
+   25  mkdir -p ~/src
+   26  mv ~/Downloads/AMD-APP-SDK-*.tgz ~/src
+   27  cd ~/src
+   28  tar -zxvf AMD-APP-SDK-*.tgz
+   29  sudo ./Install-AMD-APP.sh
+   30  curl ifconfig.me
+   31  exit
+   32  sudo apt-get upgrade -y
+   33  sudo apt-get update
+   34  sudo apt-get upgrade -y
+   35  exit
+   36  mv ~/Downloads/setup_mining.sh ~/bin/
+   37  gedit ~/bin/*.sh
+   38  bg
+   39  ls
+   40  cd src
+   41  ls
+   42  git clone git://github.com/ckolivas/cgminer.git cgminer
+   43  cd ~/src/cgminer
+   44  ./autogen.sh
+   45  source /etc/security/cred.sh
+   46  nano /etc/security/cres.sh
+   47  nano /etc/security/cred.sh
+   48  source /etc/security/cred.sh
+   49  make
+   50  source /etc/security/cred.sh
+   51  export DISPLAY=:0
+   52  export GPU_USE_SYNC_OBJECTS=1
+   53  ./cgminer -u hobs_hobs -p "$PW_BITMINTER" -o http://mint.bitminter.com:8332 -I 9,9,9
+   54  cd ..
+   55  ls
+   56  more ReadMe.txt
+   57  more *.log
+   58  ls
+   59  cd cgminer
+   60  ./cgminer -n
+   61  mkdir ADL_SDK
+   62  cd ADL_SDK
+   63  mv ~/Downloads/ADL_SDK_5.0.zip .
+   64  unzip ADL_SDK_5.0.zip
+   65  cp ADL_SDK/include/* ~/src/cgminer/ADL_SDK
+   66  ls
+   67  cp include/* ~/src/cgminer/ADL_SDK
+   68  cd ..
+   69  ls
+   70  mv cred.sh ~/bin
+   71  sudo mv ~/bin/cred.sh /etc/security/
+   72  more /etc/security/cred.sh
+   73  gksudo gparted
+   74  pkill gparted
+   75  gksudo gparted
+   76  sudo gparted
+   77  exit
+   78  lspci -v | grep VGA -A15 
+   79  cd src
+   80  ls
+   81  sudo ./Install-AMD-APP.sh
+   82  cat ~/bin/setup_mining.sh 
+   83  grep "Port " /etc/ssh/sshd_config
+   84  sudo sed -i "s/^Port[ ]22/Port $PORT_BM/g" /etc/ssh/sshd_config
+   85  grep "Port " /etc/ssh/sshd_config
+   86  sudo sed -i "s/^Port[ ]$PORT_BM/Port 22/g" /etc/ssh/sshd_config
+   87  grep "Port " /etc/ssh/sshd_config
+   88  source ~/etc/security/cred.sh
+   89  source /etc/security/cred.sh
+   90  sudo sed -i "s/^Port[ ]22/Port $PORT_BM/g" /etc/ssh/sshd_config
+   91  grep "Port " /etc/ssh/sshd_config
+   92  sudo service sshd restart
+   93  sudo service ssh\ restart
+   94  sudo service ssh restart
+   95  sudo service open-ssh restart
+   96  sudo service --list
+   97  sudo service
+   98  sudo service --status-all
+   99  env
+  100  env | grep GPU
+  101  env | grep SYNC
+  102  cd cgminer
+  103  cd ~/src/cgminer
+  104  ./autogen.sh
+  105  CFLAGS="-O2 -Wall -march=native -I /opt/AMDAPP/include/" LDFLAGS="-L/opt/AMDAPP/lib/x86_64" ./configure
+  106  make
+  107  export DISPLAY=:0
+  108  export GPU_USE_SYNC_OBJECTS=1
+  109  ./cgminer -n
+  110  ./cgminer -u hobs_hobs -p 'm@keco!n' -o http://mint.bitminter.com:8332 -I 9,9
+  111  ./cgminer -u hobs_hobs -p 'm@kec0!n' -o http://mint.bitminter.com:8332 -I 9,9
+  112  ./cgminer -u hobs_hobs -p 'm@kec0in' -o http://mint.bitminter.com:8332 -I 9,9
+  113  exit
+  114  cd ~/Downloads
+  115  ls
+  116  more setup_mining.sh~ 
+  117  cat setup_mining.sh~ 
+  118  cd ~/src
+  119  cd cgminer/
+  120  ls
+  121  cd ADL_SDK/
+  122  ls
+  123  cd ..
+  124  env
+  125  echo $PW_BITMINTER
+  126  source /etc/security/cred.sh
+  127  echo $PW_BITMINTER
+  128  export PW_BITMINTER='m@k3co\!n'
+  129  echo $PW_BITMINTER
+  130  lspci
+  131  lspci -v | grep VGA
+  132  lspci -v | grep VGA -A50 -B10
+  133  sudo nano /etc/X11
+  134  ls /etc/X11
+  135  sudo nano /etc/X11/xorg.conf
+  136  ./cgminer -n
+  137  Section "Device"
+  138  EndSection
+  139  Section "Device"
+  140  ./cgminer -n --gpu-map 1:1,2:2
+  141  ./cgminer -n --gpu-map 0:1,1:2
+  142  cd src
+  143  cd cgminer
+  144  ./cgminer -n
+  145  sudo nano /etc/xorg/xorg.conf
+  146  sudo nano /etc/X11/xorg.conf
+  147  sudo reboot
+  148  cd src/cgminer
+  149  ./cgminer -n
+  150  lspci
+  151  ./cgminer -n
+  152  cd src/cgminer/
+  153  ./cgminer -n
+  154  exit
+  155  sudo apt-get update
+  156  more /etc/lightdm/lightdm.conf 
+  157  sudo nano /etc/lightdm/lightdm.conf
+  158  /etc/lightdm/lightdm.conf like this after installation.
+  159  sudo apt-get install fglrx-updates fglrx-amdcccle-updates fglrx-updates-dev
+  160  pgrep cgminer
+  161  sudo pkill cgminer
+  162  pgrep cgminer
+  163  aticonfig --lsa
+  164  sudo aticonfig --lsa
+  165  sudo aticonfig --adapter=all --initial
+  166  more xorg.conf
+  167  more /etc/Xll/xorg.conf
+  168  more /etc/X11/xorg.conf
+  169  export DISPLAY=:0
+  170  export GPU_USE_SYNC_OBJECTS=1
+  171  ./cgminer -n
+  172  cd src/cgminer
+  173  ./cgminer -n
+  174  sudo reboot
+  175  exit
+  176  cd src/cgminer
+  177  ./cgminer -n
+  178  ./cgminer -n -v
+  179  ./cgminer -u hobs_hobs -p 'm@kec0in' -o http://mint.bitminter.com:8332 -I 9,9
+  180  exit
+  181  sudo aticonfig --adapter=all --odgt
+  182  sudo apt-get install xorg openbox
+  183  sudo apt-get search xfce
+  184  sudo apt-cache search xfce
+  185  sudo apt-get install xfce
+  186  sudo apt-get install xfce4
+  187  cd src
+  188  cd cgminer
+  189  ./cgminer -u hobs_hobs -p 'm@kec0in' -o http://mint.bitminter.com:8332 -I 9,9
+  190  bg
+  191  top
+  192  pgrep cgminer
+  193  ps aux | grep cgm
+  194  exit
+  195  nano ~/bin/mine.sh
+  196  bg
+  197  nano ~/bin/mine.sh
+  198  chmod +x ~/bin/mine.sh 
+  199  sudo apt-get install byobu
+  200  byobu
+  201  exit
+  202  pgrep cgmine
+  203  ps aux | grep cgm
+  204  kill 12056
+  205  ps aux | grep cgmi
+  206  pkill 12056
+  207  ps aux | grep cgmi
+  208  kill --term 12056
+  209  man kill
+  210  kill s KILL 12056
+  211  ps aux | grep cgmi
+  212  ps -e
+  213  kill 12056
+  214  ps -e
+  215  kill -s KILL 12056
+  216  ps aux
+  217  byobu
+  218  exit
+  219  byobu
+  220  exit
+  221  cd ..
+  222  cd bin
+  223  ./mine.sh
+  224  sudo shutdown now
+  225  byobu
+  226  exit
+  227  nano ~/.bashrc
+  228  more ~/.profile
+  229  more ~/.bash_profile
+  230  nano ~/.bashrc
+  231  more /etc/rc.local
+  232  sudo nano /etc/rc.local
+  233  nano ~/.bashrc
+  234  top
+  235  exit
+  236  ./bin/mine.sh
+  237  sudo shutdown now
+  238  top
+  239  pgrep cgminer
+  240  nano ~/.bashrc
+  241  sudo nano /etc/rc.local
+  242  nano ~/bin/mine.sh
+  243  mv ~/bin/mine.sh ~/bin/mine
+  244  chmod a+x ~/bin/mine
+  245  sudo nano /etc/rc.local
+  246  sudo reboot
+  247  mine
+  248  sudo shutdown now
+  249  pgrep cgminer
+  250  ps aux | grep mine
+  251  byobu
+  252  exit
+  253  top
+  254  byobu
+  255  exit
+  256  sudo nano /etc/rc.local
+  257  byobu
+  258  exit
+  259  byobu
+  260  exit
+  261  byobu
+  262  more .ssh
+  263  cd .ssh
+  264  ls
+  265  cd ..
+  266  sudo apt-get search cudo
+  267  sudo apt-cache search cuda
+  268  sudo apt-get install nvidia-cuda-toolkit
+  269  byobu
+  270  exit
+  271  sudo apt-get update
+  272  sudo apt-get remove nvidia-cuda-toolkit
+  273  byobu
+  274  lspci
+  275  lspci -v | grep VGA
+  276  lspci -v | grep -A10 -B3 VGA
+  277  lspci -v | grep -A10 -B3 radeon
+  278  lspci -v | grep -A10 -B3 Radeon
+  279  byobu
+  280  top
+  281  pgrep mine
+  282  mine
+  283  pwd
+  284  cd src
+  285  ls
+  286  cd parallel
+  287  ls
+  288  python timed_example.py
+  289  exit
+  290  sudo apt-get install -y gfortran
+  291  sudo apt-get install python-pip python-dev
+  292  sudo pip install virtualenv virtualenvwrapper
+  293  cd sr
+  294  cd src
+  295  mkproject parallel
+  296  nano ~/.bashrc
+  297  source ~/.bashrc
+  298  mkproject parallel
+  299  nano ~/.bashrc
+  300  source ~/.bashrc
+  301  mkproject parallel
+  302  pip install--upgrade  distribute 
+  303  pip install --upgrade distribute
+  304  pip install mako
+  305  pip install numpy
+  306  sudo update-pciids
+  307  lspci -v | grep VGA
+  308  python
+  309  pip install opencl
+  310  pip install pyopencl
+  311  sudo apt-get install -y gfortran g++
+  312  pip install pyopencl
+  313  ls
+  314  nano example.py
+  315  python example.py
+  316  python
+  317  nano timed_example.py
+  318  python timed_example.py
+  319  python
+  320  pip install ipython
+  321  ipython
+  322  ls
+  323  more timed_example.py 
+  324  nano timed_example.py 
+  325  python timed_example.py 
+  326  nano timed_example.py 
+  327  python timed_example.py 
+  328  nano timed_example.py 
+  329  python timed_example.py 
+  330  nano timed_example.py 
+  331  python timed_example.py 
+  332  nano timed_example.py 
+  333  python timed_example.py 
+  334  nano timed_example.py 
+  335  python timed_example.py 
+  336  nano timed_example.py 
+  337  python timed_example.py 
+  338  nano timed_example.py 
+  339  python timed_example.py 
+  340  nano timed_example.py 
+  341  python timed_example.py 
+  342  nano ~/.bashrc
+  343  python timed_example.py 
+  344  source ~/.bashrc
+  345  python timed_example.py 
+  346  nano ~/.bashrc
+  347  source ~/.bashrc
+  348  python timed_example.py 
+  349  python
+  350  nano timed_example.py 
+  351  byobu
+  352  nano timed_example.py 
+  353  workon parallel
+  354  python timed_example.py 
+  355  byobu
+  356  uname -u
+  357  uname
+  358  uname -v
+  359  cat proc/cpuinfo
+  360  ls proc
+  361  ls /proc
+  362  ls /proc/cpuinfo
+  363  more /proc/cpuinfo
+  364  more /proc/meminfo
+  365  python timed_example.py 
+  366  nano timed_example.py 
+  367  exit
+  368  history | grep -A50 -B50 pyopencl
+  369  more ~/.bashrc
+  370  exit
+  371  sudo apt-get upgrade -y
+  372  byobu
+  373  exit
+  374  byobu
+  375  exit
+  376  byobu
+  377  exit
+  378  df
+  379  df -h
+  380  exit
+  381  ls /media
+  382  ln -s /dev/disk/by-label/StoreJet ~/
+  383  exit
+  384  rm StoreJet 
+  385  mkdir StoreJet
+  386  mount /dev/disk/by-label/StoreJet ~/StoreJet
+  387  sudo mount /dev/disk/by-label/StoreJet ~/StoreJet
+  388  exit
+  389  wget -q -O- 'https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc' | sudo apt-key add -
+  390  echo deb http://ceph.com/debian-cuttlefish/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
+  391  echo deb http://ceph.com/debian-bobtail/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
+  392  echo deb http://ceph.com/debian-argonaut/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
+  393  sudo apt-get update && sudo apt-get install ceph
+  394  sudo apt-get update
+  395  sudo apt-get upgrade -y
+  396  sudo nano /etc/default/rsyslog
+  397  sudo touch /var/log/motorola_surfboard_wifi_router.log
+  398  sudo nano /etc/rsyslog.conf
+  399  sudo nano /etc/logrotate.d/motorola_surfboard_wifi_router.log
+  400  sudo nano /etc/rsyslog.conf
+  401  sudo touch /var/log/motorola_surfboard_wifi_router.log
+  402  sudo nano /etc/logrotate.d/motorola_surfboard_wifi_router.log
+  403  sudo service rsyslog restart  
+  404  ifconfig
+  405  sudo nano /etc/rsyslog.conf
+  406  sudo nano /etc/rsyslog.d/30-enable-local-tcp.conf
+  407  sudo service rsyslog restart  
+  408  more /var/log/motorola_surfboard_wifi_router.log 
+  409  sudo nano /etc/rsyslog.d/30-enable-local-tcp.conf
+  410  sudo nano /etc/rsyslog.conf
+  411  sudo service rsyslog restart  
+  412  sudo nano /etc/rsyslog.conf
+  413  sudo service rsyslog restart  
+  414  nano /etc/rc.conf
+  415  ls /etc
+  416  nano /etc/hosts
+  417  sudo nano /etc/hosts
+  418  nano /etc/hosts
+  419  sudo nano /etc/hosts
+  420  pink AlSSD
+  421  ping AlSSD
+  422  ping router.happyhouse.lcl
+  423  sudo service rsyslog restart  
+  424  ls /var/log
+  425  ls -l /var/log
+  426  pgrep syslog
+  427  chown syslog:adm /var/log/motorola_surfboard_wifi_router.log 
+  428  sudo chown syslog:adm /var/log/motorola_surfboard_wifi_router.log 
+  429  ls -l /var/log
+  430  more nano /etc/rsyslog.d/20-ufw.conf 
+  431  sudo nano /etc/rsyslog.d/20-ufw.conf 
+  432  ls -l /var/log
+  433  ls -c /var/log
+  434  ls -c -lt /var/log
+  435  ls -chalt /var/log
+  436  tail syslog
+  437  tail /var/log/syslog
+  438  sudo ufw stat
+  439  sudo ufw status
+  440  sudo ufw enable
+  441  more ~/.ssh/config
+  442  more /etc/ssh/ssh_config 
+  443  grep Port /etc/ssh/
+  444  grep Port /etc/ssh/*
+  445  sudo ufw enable
+  446  ufw allow 10738
+  447  sudo ufw allow 10738
+  448  sudo ufw allow 514
+  449  sudo ufw status
+  450  ufw proto udp allow from 192.168.0.0/8 to 192.168.0.3 port 514
+  451  ufw allow proto udp from 192.168.0.0/8 to 192.168.0.3 port 514
+  452  sudo ufw allow proto udp from 192.168.0.0/8 to 192.168.0.3 port 514
+  453  sudo tcp allow proto udp from 192.168.0.0/8 to 192.168.0.3 port 514
+  454  sudo ufw allow proto tcp from 192.168.0.0/8 to 192.168.0.3 port 514
+  455  sudo ufw status
+  456  sudo ufw allow proto tcp from 192.168.0.0/2 to 192.168.0.3 port 514
+  457  sudo ufw status
+  458  tail /var/log/syslog
+  459  ping 224.0.0.251
+  460  ls -chalt /var/log
+  461  ls -chaltr /var/log
+  462  more /var/log/ufw.log
+  463  ifconfig
+  464  ls -chaltr /var/log
+  465  date
+  466  ls -chaltr /var/log
+  467  tail sys.log
+  468  tail syslog
+  469  tail /var/log/syslog
+  470  tail -n 100 /var/log/syslog
+  471  byobu
+  472  ufw disable
+  473  sudo ufw disable
+  474  ls -chaltr /var/log
+  475  exit
+  476  ifconfig
+  477  nano /etc/hosts
+  478  exit
+  479  sudo apt-get install nginx
+  480  sudo apt-get install ddclient
+  481  sudo nano /etc/hosts
+  482  sudo nano /etc/ddclient.conf
+  483  fg
+  484  sudo service ddclient restart
+  485  sudo nano /etc/ddclient.conf
+  486  sudo service ddclient restart
+  487  dmesg
+  488  ps -al
+  489  ping bit.storydecoder.com
+  490  sudo nano /etc/ddclient.conf
+  491  sudo rm /tmp/ddclient.cache
+  492  sudo service ddclient restart
+  493  nano /etc/hosts
+  494  sudo nano /etc/hosts
+  495  sudo service ddclient restart
+  496  ping storydecoder.com
+  497  sudo nano /etc/ddclient.conf
+  498  sudo service ddclient stop
+  499  ddclient -verbose -debug
+  500  sudo ddclient -verbose -debug
+  501  rm /var/tmp/ddclient.cache
+  502  rm /var/ddclient.cache
+  503  find / -name ddclient.cache -print
+  504  sudo find / -name ddclient.cache -print
+  505  sudo service ddclient restart
+  506  ifconfig
+  507  grep -i port /etc/ssh/ssh_config
+  508  grep -i port /etc/ssh/sshd_config
+  509  ping 71.59.254.246
+  510  ifconfig
+  511  wget checkip.dyndns.com
+  512  ls
+  513  more index.html 
+  514  sudo apt-get update
+  515  sudo apt-get upgrade -y
+  516  ifconfig
+  517  sudo nano /etc/ddclient.conf 
+  518  sudo service ddclient restart
+  519  sudo service ddclient stop
+  520  man ddclient
+  521  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  522  sudo service ddclient restart
+  523  sudo nano /etc/ddclient.conf 
+  524  sudo service ddclient stop
+  525  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  526  sudo nano /etc/ddclient.conf 
+  527  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  528  sudo nano /etc/ddclient.conf 
+  529  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  530  sudo service ddclient restart
+  531  ifconfig
+  532  ping bit.storydecoder.com
+  533  wget 127.0.0.1
+  534  byobu
+  535  exit
+  536  byobu
+  537  sudo ufw status verbose
+  538  sudo ufw enable
+  539  sudo ufw status verbose
+  540  sudo ufw allow http
+  541  sudo ufw allow https
+  542  nano /etc/nginx/nginx.conf 
+  543  more /etc/nginx/naxsi.rules
+  544  more /etc/nginx/nginx.conf 
+  545  nano /etc/nginx/nginx.conf 
+  546  sudo nano /etc/nginx/nginx.conf 
+  547  cd /usr/local
+  548  cd www
+  549  cd /var/www
+  550  cd /var
+  551  ls
+  552  cd local
+  553  ls
+  554  cd ..
+  555  ls
+  556  sudo nano /etc/nginx/nginx.conf 
+  557  cd /etc
+  558  cd nginx/
+  559  ls
+  560  cd sites-enabled/
+  561  ls
+  562  more default
+  563  sudo nano default 
+  564  more default 
+  565  cd /usr/share
+  566  ls
+  567  cd nginx/
+  568  ls
+  569  cd www
+  570  ls
+  571  sudo service nginx start
+  572  sudo service nginx restart
+  573  nano index.html
+  574  sudo nano index.html
+  575  exit
+  576  more /etc/ddclient.conf 
+  577  sudo more /etc/ddclient.conf 
+  578  sudo nano /etc/ddclient.conf 
+  579  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  580  sudo nano /etc/ddclient.conf 
+  581  sudo service ddclient restart
+  582  sudo nano /etc/ddclient.conf 
+  583  sudo service ddclient restart
+  584  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  585  sudo service ddclient restart
+  586  sudo nano /etc/ddclient.conf 
+  587  sudo ddclient -daemon=0 -noquiet -verbose -debug
+  588  sudo service ddclient restart
+  589  nano /etc/default/ddclient 
+  590  more /etc/default/ddclient 
+  591  sudo nano /etc/default/ddclient 
+  592  sudo nano /etc/ddclient.conf 
+  593  sudo /etc/init.d/ddclient status
+  594  sudo service ddclient restart
+  595  exit
+  596  sudo apt-get install nginx uwsgi uwsgi-plugin-python python-virtualenv
+  597  cd src
+  598  ls
+  599  virtualenv oregon
+  600  cd oregon
+  601  ls
+  602  cd ..
+  603  cd ...
+  604  cd ..
+  605  df
+  606  exit
+  607  df
+  608  exit
+  609  pip install virtualenvwrapper
+  610  nano ~/.bashrc
+  611  cd src
+  612  mkproject oregon
+  613  ls
+  614  rm -rf oregon
+  615  cd ..
+  616  cd .virtualenvs/
+  617  ls
+  618  cd ..
+  619  cd src
+  620  mkproject oregon
+  621  nano requirements.txt
+  622  more requirements.txt 
+  623  pip install -r requirements.txt
+  624  deactivate
+  625  sudo apt-get install Django==1.5.1
+  626  sudo apt-get install pg_config
+  627  sudo apt-get install libpq-dev python-dev
+  628  cd ..
+  629  workon oregon
+  630  pip install -r requirements.txt
+  631  pip install uwsgi
+  632  nano test_uwsgi.py
+  633  uwsgi --http :8000 --wsgi-file test_uwsgi.py
+  634  manage.py help
+  635  ./manage.py help
+  636  django-admin.py startproject oregon
+  637  cd oregon
+  638  ls
+  639  manage.py runserver
+  640  chmod +x manage.py 
+  641  manage.py runserver
+  642  ls
+  643  python manage.py runserver
+  644  cd ..
+  645  ls
+  646  cd oregon
+  647  ls
+  648  cd ..
+  649  ls
+  650  cd oregon
+  651  uwsgi --http :8000 --wsgi-file oregon_wsgi.py
+  652  sudo service nginx restart
+  653  sudo nano /etc/nginx/sites-enabled/oregon
+  654  sudo mv /etc/nginx/sites-enabled/oregon /etc/nginx/oregon_nginx.conf
+  655  exit
+  656  curl http://127.0.0.1:8000
+  657  workon oregon
+  658  ls
+  659  cd oregon
+  660  ls
+  661  cd oregon
+  662  ls
+  663  cd ..
+  664  ls
+  665  curl http://127.0.0.1:8000
+  666  exit
+  667  cd /etc/nginx
+  668  ls
+  669  cd sites-enabled
+  670  ls
+  671  cd ..
+  672  mv oregon_nginx.conf sites-available/
+  673  sudo mv oregon_nginx.conf sites-available/
+  674  ls
+  675  cd sites-available/
+  676  ls
+  677  mv oregon_nginx.conf project_oregon
+  678  sudo mv oregon_nginx.conf project_oregon
+  679  sudo ln -s project_oregon ../sites-enabled/
+  680  nano project_oregon 
+  681  sudo nano project_oregon 
+  682  ls  /etc/nginx/uwsgi_params
+  683  more /etc/nginx/uwsgi_params
+  684  sudo service nginx restart
+  685  cd ..
+  686  find . -type f -name *.png
+  687  cd ~
+  688  find . -type f -name *.png
+  689  cp .virtualenvs/oregon/share/doc/ipython/examples/notebooks/logo/logo.png ~/src/oregon/media.png
+  690  workon oregon
+  691  ls
+  692  cd oregon
+  693  ls
+  694  cd oregon
+  695  ls
+  696  mkdir media
+  697  mv ../../media.png media/
+  698  grep media /etc/nginx/sites-available/*
+  699  mv media ../..
+  700  ls -al
+  701  cd ..
+  702  ls
+  703  ls -al
+  704  cd media
+  705  ls
+  706  ls -al
+  707  cd ..
+  708  sudo service nginx restart
+  709  cd oregon
+  710  ls
+  711  cd oregon
+  712  ls
+  713  mkdir static
+  714  ls
+  715  grep static /etc/nginx/sites-available/*
+  716  ls -al /home/bit/src/oregon/oregon/static
+  717  ls -al /home/bit/src/oregon/oregon
+  718  ps -aux
+  719  ps -aux | grep orca
+  720  pkill orca
+  721  ps -aux | grep orca
+  722  kill 11176 --term
+  723  kill 11176 -term
+  724  kill 11176 --TERM
+  725  kill --TERM 11176
+  726  man kill
+  727  kill -TERM 11176
+  728  ps -aux | grep orca
+  729  kill -TERM 11203
+  730  ps -aux | grep orca
+  731  pkill orca
+  732  kill -KILL 11207
+  733  ps -aux | grep orca
+  734  mkdir /home/bit/src/oregon/oregon/static
+  735  sublime ../.
+  736  sublime2 ../.
+  737  sublime2.0 ../.
+  738  sublime-text-2
+  739  sublime-text
+  740  sublimetext
+  741  sublime_text
+  742  tagim 'boat9, boat montage, local, skiff outboard, transom, board, aft on wind rose, quality7, interest6, culture, boat, family8, public6'
+  743  deactivate
+  744  cd ..
+  745  cd oregon
+  746  ls
+  747  cd oregon
+  748  ls
+  749  nano settings.py
+  750  cd ..
+  751  manage.py test
+  752  ./manage.py test
+  753  workon oregon
+  754  cd oregon
+  755  ./manage.py test
+  756  cd ..
+  757  more requirements.txt
+  758  nano oregon/oregon/settings.py
+  759  cd oregon
+  760  ./manage.py test
+  761  manage.py validate
+  762  chmod +x manage.py
+  763  manage.py validate
+  764  ./manage.py validate
+  765  sudo service nginx restart
+  766  uwsgi --socket :8001 --wsgi-file test_uwsgi.py
+  767  sudo ln -s /etc/nginx/sites-available/project_oregon /etc/nginx/sites-enabled/project_oregon
+  768  sudo service nginx restart
+  769  uwsgi --socket :8001 --wsgi-file ../test_uwsgi.py 
+  770  sudo nano /etc/nginx/sites-available/project_oregon 
+  771  history >> ~/nginx_django_configuration_notes.txt 

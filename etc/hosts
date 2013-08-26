@@ -1,0 +1,20 @@
+127.0.0.1       localhost
+127.0.1.1       bm-desktop
+127.0.0.1       storydecoder.com                 
+192.168.0.0     router.happyhouse.lcl
+192.168.0.1     neo.happyhouse.lcl
+192.168.0.2     unk2.happyhouse.lcl
+192.168.0.3     storydecoder.com bit.storydecoder.com bit.happyhouse.lcl bm-desktop
+192.168.0.4     hlap.happyhouse.lcl AlSSD
+192.168.0.5     lhp.happyhouse.lcl
+192.168.0.7     hrzr.happyhouse.lcl
+192.168.0.8     llap.happyhouse.lcl
+192.168.0.9     unk1.happyhouse.lcl
+192.168.0.10    hkin.happyhouse.lcl
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
