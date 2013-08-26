@@ -19,7 +19,7 @@ server {
 
     # Django media
     location /media  {
-        alias /home/bit/src/oregon/media;  # your Django project's media files - amend as required
+        alias /home/bit/src/oregon/oregon/media;  # your Django project's media files - amend as required
     }
 
     location /static {
