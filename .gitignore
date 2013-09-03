@@ -1,2 +1,4 @@
 oregon/oregon/settings/local_untracked.py
 *.pyc
+*.sqlite3
+*.pyc
