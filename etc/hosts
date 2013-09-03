@@ -1,11 +1,9 @@
-127.0.0.1       localhost
-127.0.1.1       bm-desktop
-127.0.0.1       storydecoder.com                 
+127.0.0.1       localhost localhost.localdomain  
 192.168.0.0     router.happyhouse.lcl
 192.168.0.1     neo.happyhouse.lcl
 192.168.0.2     unk2.happyhouse.lcl
-192.168.0.3     storydecoder.com bit.storydecoder.com bit.happyhouse.lcl bm-desktop
-192.168.0.4     hlap.happyhouse.lcl AlSSD
+192.168.0.3     storydecoder.com bit.storydecoder.com bit.happyhouse.lcl bmdesktop.happyhouse.lcl
+192.168.0.4     hlap.happyhouse.lcl AlSSD.happyhouse.lcl
 192.168.0.5     lhp.happyhouse.lcl
 192.168.0.7     hrzr.happyhouse.lcl
 192.168.0.8     llap.happyhouse.lcl
