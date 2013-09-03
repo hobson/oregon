@@ -1,11 +1,11 @@
 from django.contrib import admin
-from oregon.home.models import *
+from .models import *
 
-class WordAdmin(admin.ModelAdmin):
+class UserAdmin(admin.ModelAdmin):
     pass
 
-class MorphemeAdmin(admin.MorephemeAdmin):
+class JobAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(Word, WordAdmin)
-admin.site.register(Morpheme, MorphemeAdmin)
+admin.site.register(User, UserAdmin)
+admin.site.register(Job, JobAdmin)
