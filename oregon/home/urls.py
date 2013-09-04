@@ -5,6 +5,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 from django.contrib.auth.models import User, Group
+from home.models import Job
+
 from rest_framework import viewsets, routers
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -13,10 +15,14 @@ class UserViewSet(viewsets.ModelViewSet):
 class GroupViewSet(viewsets.ModelViewSet):
     model = Group
 
+class JobViewSet(viewsets.ModelViewSet):
+    model = Job
+
 # Routers provide an easy way of automatically determining the URL conf
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
+router.register(r'jobs', JobViewSet)
 
 # Wire up API using automatic URL routing.
 # Additionally, we include login URLs for the browseable API.
