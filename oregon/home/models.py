@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 def representation(model, field_names=[]):
@@ -13,7 +14,8 @@ def representation(model, field_names=[]):
 representation.max_fields = 5
 
 
-class User(models.Model):
+class WebsiteUser(models.Model):
+    user = models.OneToOneField(User)
     name = models.CharField(max_length=128, null=True, blank=True)
     email = models.CharField(max_length=128, null=True, blank=True)
     phone = models.CharField(max_length=25, null=True, blank=True)
@@ -29,7 +31,7 @@ class User(models.Model):
 
 
 class Job(models.Model):
-    submitted_by = models.OneToOneField('User', null=True)
+    submitted_by = models.OneToOneField(WebsiteUser, null=True)
     submitted = models.DateTimeField(null=True)
     num_openings = models.IntegerField(default=1, null=True)
     employer_email = models.CharField(max_length=128, null=True)
