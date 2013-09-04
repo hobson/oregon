@@ -12,7 +12,7 @@ from rest_framework import viewsets, routers
 class UserViewSet(viewsets.ModelViewSet):
     model = User
 
-class WebUserViewSet(viewsets.ModelViewSet):
+class WebsiteUserViewSet(viewsets.ModelViewSet):
     model = WebsiteUser
 
 class GroupViewSet(viewsets.ModelViewSet):
@@ -23,8 +23,8 @@ class JobViewSet(viewsets.ModelViewSet):
 
 # Routers provide an easy way of automatically determining the URL conf
 router = routers.DefaultRouter()
-#router.register(r'users', UserViewSet)
-router.register(r'users', WebUserViewSet)
+router.register(r'users', UserViewSet)
+router.register(r'website users', WebsiteUserViewSet)
 router.register(r'groups', GroupViewSet)
 router.register(r'jobs', JobViewSet)
 
