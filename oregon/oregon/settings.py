@@ -182,6 +182,19 @@ REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
-}
+        #'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        'rest_framework.permissions.IsAuthenticated'
+    ],
+
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        # requires a username and passowrd, so only useful during debugging/testing
+        'rest_framework.authentication.BasicAuthentication',
+        # Allows other servers to authenticate using simple tokens
+        #'rest_framework.authentication.TokenAuthentication',
+        # OAuth 1.0a, needs an oauth_provider in installed apps and a syncdb
+        #'rest_framework.authentication.OAuthAuthentication',
+        # Default Session authentication used by Django, so clients on the same server will automatically be authenticated
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+    }
+
